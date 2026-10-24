@@ -1,0 +1,21 @@
+{
+  "purpose": "Synthetic data-quality tests; not additional verified breaches",
+  "input_records": 21,
+  "invalid_records": 7,
+  "normalized_rows": 7,
+  "unique_hashes": 5,
+  "duplicates_removed": 9,
+  "rejection_reasons": {
+    "missing_hash": 2,
+    "invalid_hash": 3,
+    "invalid_count": 2
+  },
+  "selected_hashes": [
+    "5BAA6003CD215739D7C1B2218670D26F81408237",
+    "5BAA6003D68EB55068C33ACE09247EE4C639306B",
+    "5BAA600658BFD1E05761042698D19D32CD9F1A8F"
+  ],
+  "origin": "Selected hashes from local HIBP range sample; fixture rows remain synthetic data-quality tests",
+  "overlaps_sample": true,
+  "combined_policy": "Measure sample + fixture independently; overlapping selected hashes increase duplicates by 3. Counts use max, not sum."
+}

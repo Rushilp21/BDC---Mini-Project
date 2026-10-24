@@ -1,0 +1,55 @@
+{
+  "fixture": {
+    "input_records": 21,
+    "valid_records": 14,
+    "invalid_records": 7,
+    "duplicates_removed": 9,
+    "unique_hashes": 5,
+    "normalized_rows": 7,
+    "rejection_reasons": {
+      "invalid_hash": 3,
+      "invalid_count": 2,
+      "missing_hash": 2
+    },
+    "read_failures": 0,
+    "duration_seconds": 5.392825752000135,
+    "records_per_second": 3.8940624017401912,
+    "spark_mode": "local[2]",
+    "spark_version": "3.5.7",
+    "policy": "Maximum count per normalized hash; sources unioned; normalization counts all parsed rows"
+  },
+  "combined": {
+    "input_records": 236516,
+    "valid_records": 236509,
+    "invalid_records": 7,
+    "duplicates_removed": 12,
+    "unique_hashes": 236497,
+    "normalized_rows": 7,
+    "rejection_reasons": {
+      "invalid_hash": 3,
+      "invalid_count": 2,
+      "missing_hash": 2
+    },
+    "read_failures": 0,
+    "duration_seconds": 39.592778812999995,
+    "records_per_second": 5973.715588822013,
+    "spark_mode": "local[2]",
+    "spark_version": "3.5.7",
+    "policy": "Maximum count per normalized hash; sources unioned; normalization counts all parsed rows"
+  },
+  "sample": {
+    "input_records": 236495,
+    "valid_records": 236495,
+    "invalid_records": 0,
+    "duplicates_removed": 0,
+    "unique_hashes": 236495,
+    "normalized_rows": 0,
+    "rejection_reasons": {},
+    "read_failures": 0,
+    "duration_seconds": 14.59495205899998,
+    "records_per_second": 16203.890156265728,
+    "spark_mode": "local[2]",
+    "spark_version": "3.5.7",
+    "policy": "Maximum count per normalized hash; sources unioned; normalization counts all parsed rows"
+  }
+}

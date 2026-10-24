@@ -1,0 +1,164 @@
+{
+  "scale_runs": [
+    {
+      "results": [
+        {
+          "filter": "BloomFilter",
+          "dataset_size": 10000,
+          "build_ms": 173.692703,
+          "successful_inserts": 10000,
+          "failed_inserts": 0,
+          "packed_bytes": 23963,
+          "serialized_bytes": 24077,
+          "median_lookup_ns": 11315.8249,
+          "queries_per_second": 88371.81635781586,
+          "false_positives": 3,
+          "nonmember_tests": 10000,
+          "false_positive_rate": 0.0003,
+          "member_misses": 0,
+          "capacity": 20000,
+          "load": 0.5
+        },
+        {
+          "filter": "CuckooFilter",
+          "dataset_size": 10000,
+          "build_ms": 63.110998,
+          "successful_inserts": 10000,
+          "failed_inserts": 0,
+          "packed_bytes": 65536,
+          "serialized_bytes": 65748,
+          "median_lookup_ns": 8134.44035,
+          "queries_per_second": 122934.08728481241,
+          "false_positives": 27,
+          "nonmember_tests": 10000,
+          "false_positive_rate": 0.0027,
+          "member_misses": 0,
+          "capacity": 32768,
+          "load": 0.30517578125
+        }
+      ],
+      "deletion": {
+        "deleted": true,
+        "still_matches": false,
+        "other_member_misses": 0,
+        "note": "Fingerprint collisions may leave a deleted hash matching. Authoritative corpus unchanged."
+      },
+      "protocol": "Same members and verified absent hashes; 1 warmup, 5 timed batches, median per-query time. Bloom target 1%; Cuckoo 10-bit fingerprints (different FPR).",
+      "machine": {
+        "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+        "processor": "x86_64",
+        "logical_cpus": 8,
+        "python": "3.10.12"
+      },
+      "verified_against_hashes": 236499,
+      "memory_scope": "Filter packed bytes and serialization only; excludes SQLite, Python runtime and Spark"
+    },
+    {
+      "results": [
+        {
+          "filter": "BloomFilter",
+          "dataset_size": 100000,
+          "build_ms": 742.81072,
+          "successful_inserts": 100000,
+          "failed_inserts": 0,
+          "packed_bytes": 239627,
+          "serialized_bytes": 239754,
+          "median_lookup_ns": 5518.7337,
+          "queries_per_second": 181200.98819046115,
+          "false_positives": 2,
+          "nonmember_tests": 10000,
+          "false_positive_rate": 0.0002,
+          "member_misses": 0,
+          "capacity": 200000,
+          "load": 0.5
+        },
+        {
+          "filter": "CuckooFilter",
+          "dataset_size": 100000,
+          "build_ms": 373.665829,
+          "successful_inserts": 100000,
+          "failed_inserts": 0,
+          "packed_bytes": 524288,
+          "serialized_bytes": 524506,
+          "median_lookup_ns": 4341.95375,
+          "queries_per_second": 230311.06676343572,
+          "false_positives": 35,
+          "nonmember_tests": 10000,
+          "false_positive_rate": 0.0035,
+          "member_misses": 0,
+          "capacity": 262144,
+          "load": 0.3814697265625
+        }
+      ],
+      "deletion": {
+        "deleted": true,
+        "still_matches": false,
+        "other_member_misses": 0,
+        "note": "Fingerprint collisions may leave a deleted hash matching. Authoritative corpus unchanged."
+      },
+      "protocol": "Same members and verified absent hashes; 1 warmup, 5 timed batches, median per-query time. Bloom target 1%; Cuckoo 10-bit fingerprints (different FPR).",
+      "machine": {
+        "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+        "processor": "x86_64",
+        "logical_cpus": 8,
+        "python": "3.10.12"
+      },
+      "verified_against_hashes": 236499,
+      "memory_scope": "Filter packed bytes and serialization only; excludes SQLite, Python runtime and Spark"
+    },
+    {
+      "results": [
+        {
+          "filter": "BloomFilter",
+          "dataset_size": 236499,
+          "build_ms": 1799.753088,
+          "successful_inserts": 236499,
+          "failed_inserts": 0,
+          "packed_bytes": 566715,
+          "serialized_bytes": 566842,
+          "median_lookup_ns": 5878.9692,
+          "queries_per_second": 170097.84640477452,
+          "false_positives": 4,
+          "nonmember_tests": 10000,
+          "false_positive_rate": 0.0004,
+          "member_misses": 0,
+          "capacity": 472998,
+          "load": 0.5
+        },
+        {
+          "filter": "CuckooFilter",
+          "dataset_size": 236499,
+          "build_ms": 896.007108,
+          "successful_inserts": 236499,
+          "failed_inserts": 0,
+          "packed_bytes": 2097152,
+          "serialized_bytes": 2097370,
+          "median_lookup_ns": 4275.9093,
+          "queries_per_second": 233868.38443930508,
+          "false_positives": 12,
+          "nonmember_tests": 10000,
+          "false_positive_rate": 0.0012,
+          "member_misses": 0,
+          "capacity": 1048576,
+          "load": 0.22554302215576172
+        }
+      ],
+      "deletion": {
+        "deleted": true,
+        "still_matches": false,
+        "other_member_misses": 0,
+        "note": "Fingerprint collisions may leave a deleted hash matching. Authoritative corpus unchanged."
+      },
+      "protocol": "Same members and verified absent hashes; 1 warmup, 5 timed batches, median per-query time. Bloom target 1%; Cuckoo 10-bit fingerprints (different FPR).",
+      "machine": {
+        "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+        "processor": "x86_64",
+        "logical_cpus": 8,
+        "python": "3.10.12"
+      },
+      "verified_against_hashes": 236499,
+      "memory_scope": "Filter packed bytes and serialization only; excludes SQLite, Python runtime and Spark"
+    }
+  ],
+  "measured_at": "2026-10-24T15:20:55.948075+05:30"
+}

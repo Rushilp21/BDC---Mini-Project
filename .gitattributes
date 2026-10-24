@@ -1,0 +1,11 @@
+* text=auto eol=lf
+*.sh text eol=lf
+*.py text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.pdf binary
+*.png binary
+# Whitespace variants in this fixture are intentional data-quality inputs.
+data/fixtures/cleaning_test.csv -whitespace
